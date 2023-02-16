@@ -1,0 +1,57 @@
+.profil {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.profil-name {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+
+    width: min-content;
+    display: flex;
+    align-items: center;
+    text-align: right;
+
+    color: #FF6060;
+}
+
+.profil-picture {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .profil {
+        margin-top: 23px;
+    }
+
+    .profil-name {
+        font-size: 15px;
+    }
+
+    .profil-picture {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .profil {
+        margin-top: 4px;
+    }
+
+    .profil-name {
+        font-size: 12px;
+    }
+
+    .profil-picture {
+        width: 32px;
+        height: 32px;
+    }
+}

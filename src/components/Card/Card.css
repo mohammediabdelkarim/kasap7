@@ -1,0 +1,52 @@
+.card {
+    position: relative;
+    height: 100%;
+    min-height: 340px;
+    border-radius: 10px;
+}
+
+.card:hover {
+    background: linear-gradient(to bottom, #000000, #585858, #878787, #b9b9b9, #FFFFFF, #FFFFFF, #FFFFFF, #FFFFFF, #b9b9b9, #878787, #585858, #000000);
+    cursor: pointer;
+}
+
+.card-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card:hover .card-image {
+    opacity: 0.5;
+}
+
+.card-sombre {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(180deg, #ffffff00 0%, rgba(0, 0, 0, 0.5) 100%);
+    border-radius: 10px;
+}
+
+.card-titre {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: left;
+    max-width: 310px;
+    padding-right: 20px;
+}
+
+@media only screen and (max-width: 640px) {
+    .card {
+        min-height: 255px;
+    }
+}

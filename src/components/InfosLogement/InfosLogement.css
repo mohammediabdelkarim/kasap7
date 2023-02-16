@@ -1,0 +1,50 @@
+.infos {
+    margin-top: 30px;
+}
+
+.infos-title,
+.infos-location {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+    display: flex;
+    text-align: left;
+    color: #FF6060;
+}
+
+.infos-title {
+    font-size: 36px;
+}
+
+.infos-location {
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .infos {
+        margin-top: 23px;
+    }
+
+    .infos-title {
+        font-size: 27px;
+    }
+
+    .infos-location {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .infos {
+        margin-top: 15px;
+    }
+
+    .infos-title {
+        font-size: 18px;
+    }
+
+    .infos-location {
+        font-size: 14px;
+    }
+}

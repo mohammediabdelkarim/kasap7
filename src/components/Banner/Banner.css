@@ -1,0 +1,77 @@
+.banner {
+    position: relative;
+    height: 223px;
+    margin: 0px 50px;
+}
+
+.bannersombre {
+    height: inherit;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #000000;
+    opacity: 0.2;
+    border-radius: 25px;
+}
+
+.bannerimg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+.banner h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .banner {
+        height: 167px;
+        margin: 0 60px;
+    }
+
+    .bannerimg {
+        border-radius: 18px;
+    }
+
+    .bannersombre {
+        border-radius: 18px;
+    }
+
+    .banner h1 {
+        font-size: 36px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .banner {
+        height: 111px;
+        margin: 0 20px;
+    }
+
+    .bannerimg {
+        border-radius: 10px;
+    }
+
+    .bannersombre {
+        border-radius: 10px;
+    }
+
+    .banner h1 {
+        top: 55px;
+        left: 145px;
+        font-size: 24px;
+        width: 217px;
+        text-align: left;
+        line-height: 24px;
+    }
+}
